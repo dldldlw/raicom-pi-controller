@@ -1,0 +1,30 @@
+# ---- IDE / 编辑器 ----
+.idea/
+.vscode/
+*.iml
+*.swp
+*~
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---- 运行时产物 ----
+*.log
+*.csv
+#
+# ⚠️ 这里**不要**写 *.png / *.jpg / *.bmp 这类通配！
+#    它会连 docs/awards/ 下的获奖证书一起忽略掉，导致证书根本传不上 GitHub。
+#    （这是实际踩过的坑，可以用 `git check-ignore -v <路径>` 复现。）
+#    如果以后确实要忽略运行期抓拍的图片，请**按目录**忽略，例如：
+#      /captures/
+#      /output/
+
+# ---- 系统 ----
+.DS_Store
+Thumbs.db
+desktop.ini
